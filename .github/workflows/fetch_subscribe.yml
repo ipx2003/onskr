@@ -4,7 +4,7 @@ name: 获取并更新VPN订阅节点
 on:
   schedule:
     # 每2小时 运行（可根据需要调整）
-    - cron: '0 /2 * * *'
+    - cron: '0 */2 * * *'
   workflow_dispatch:   # 支持手动触发
 
 jobs:
