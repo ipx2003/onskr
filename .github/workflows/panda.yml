@@ -1,8 +1,8 @@
-name: panda并更新VPN订阅节点
+name: 获取并更新VPN订阅节点
 
 on:
   schedule:
-    - cron: '0 0 * * *'      # 每天 UTC 00:00 运行
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
@@ -25,13 +25,18 @@ jobs:
       - name: 安装依赖
         run: pip install requests
 
-      - name: 从 Gist 下载脚本（使用 Secret PANDA）
+      - name: 运行脚本生成 panda.txt
         run: |
-          curl -o panda.py "${{ secrets.PANDA }}"
-          chmod +x panda.py
-
-      - name: 运行订阅获取脚本
-        run: python panda.py
+          python panda.py
+          echo "脚本执行完毕，当前目录文件列表："
+          ls -la
+          if [ -f panda.txt ]; then
+            echo "panda.txt 已生成，内容行数："
+            wc -l panda.txt
+          else
+            echo "错误：panda.txt 未生成！"
+            exit 1
+          fi
 
       - name: 提交并推送更新
         run: |
