@@ -1,24 +1,18 @@
-美国=ss,195.133.5.36,60129,encrypt-method=aes-256-gcm,password=7ae4e68cf77f6089
-新加坡=ss,192.124.176.153,8388,encrypt-method=aes-256-gcm,password=oXGOymGM1IE1
-日本=ss,185.141.219.123,8388,encrypt-method=aes-256-gcm,password=A8m8DQDM9i7o
-香港=ss,212.192.12.137,8388,encrypt-method=aes-256-gcm,password=RI0UcGvIkIDo
-台湾=ss,45.140.169.225,20129,encrypt-method=aes-256-gcm,password=c5fcdf7829112cb4
-法国=ss,194.87.69.100,12091,encrypt-method=aes-256-gcm,password=83acf69edb4e5453
-泰国=ss,89.125.103.52,20129,encrypt-method=aes-256-gcm,password=9cdc6440d42cb19c
-澳大利亚=ss,89.125.103.52,20129,encrypt-method=aes-256-gcm,password=9cdc6440d42cb19c
-加拿大=ss,195.58.49.100,10990,encrypt-method=aes-256-gcm,password=9f3d1a6d31468599
-韩国=ss,203.32.26.157,19801,encrypt-method=aes-256-gcm,password=63d7c17506d1f48b
-英国=ss,46.17.44.206,60290,encrypt-method=aes-256-gcm,password=f34579d0148b2581
-西班牙=ss,46.17.44.206,60290,encrypt-method=aes-256-gcm,password=f34579d0148b2581
-香港2=ss,212.192.15.209,19081,encrypt-method=aes-256-gcm,password=7e1dd4c55bf85da5
-俄罗斯=ss,46.17.40.29,10986,encrypt-method=aes-256-gcm,password=9ca2803c16de72cd
-日本2=ss,185.141.219.158,30312,encrypt-method=aes-256-gcm,password=99394cfebe6c0906
-法国2=ss,46.17.40.29,10986,encrypt-method=aes-256-gcm,password=9ca2803c16de72cd
-CAVancouver=ss, , , encrypt-method=, password=
-USCalifornia=ss, , , encrypt-method=, password=
-USHouston=ss, 18.217.164.81, 80, encrypt-method=aes-256-gcm, password=dada1203
-TWTaipei=ss, , , encrypt-method=, password=
-SGSingapore=ss, , , encrypt-method=, password=
-JPTokyo=ss, 35.176.147.139, 80, encrypt-method=aes-256-gcm, password=dada1203
-JPOsaka=ss, 13.38.83.156, 80, encrypt-method=aes-256-gcm, password=dada1203
-KRIncheon=ss, , , encrypt-method=, password=
+ss://YWVzLTI1Ni1nY206N2FlNGU2OGNmNzdmNjA4OQ==@195.133.5.36:60129#%E7%BE%8E%E5%9B%BD
+ss://YWVzLTI1Ni1nY206b1hHT3ltR00xSUUx@192.124.176.153:8388#%E6%96%B0%E5%8A%A0%E5%9D%A1
+ss://YWVzLTI1Ni1nY206QThtOERRRE05aTdv@185.141.219.123:8388#%E6%97%A5%E6%9C%AC
+ss://YWVzLTI1Ni1nY206UkkwVWNHdklrSURv@212.192.12.137:8388#%E9%A6%99%E6%B8%AF
+ss://YWVzLTI1Ni1nY206YzVmY2RmNzgyOTExMmNiNA==@45.140.169.225:20129#%E5%8F%B0%E6%B9%BE
+ss://YWVzLTI1Ni1nY206ODNhY2Y2OWVkYjRlNTQ1Mw==@194.87.69.100:12091#%E6%B3%95%E5%9B%BD
+ss://YWVzLTI1Ni1nY206OWNkYzY0NDBkNDJjYjE5Yw==@89.125.103.52:20129#%E6%B3%B0%E5%9B%BD
+ss://YWVzLTI1Ni1nY206OWNkYzY0NDBkNDJjYjE5Yw==@89.125.103.52:20129#%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A
+ss://YWVzLTI1Ni1nY206OWYzZDFhNmQzMTQ2ODU5OQ==@195.58.49.100:10990#%E5%8A%A0%E6%8B%BF%E5%A4%A7
+ss://YWVzLTI1Ni1nY206NjNkN2MxNzUwNmQxZjQ4Yg==@203.32.26.157:19801#%E9%9F%A9%E5%9B%BD
+ss://YWVzLTI1Ni1nY206ZjM0NTc5ZDAxNDhiMjU4MQ==@46.17.44.206:60290#%E8%8B%B1%E5%9B%BD
+ss://YWVzLTI1Ni1nY206ZjM0NTc5ZDAxNDhiMjU4MQ==@46.17.44.206:60290#%E8%A5%BF%E7%8F%AD%E7%89%99
+ss://YWVzLTI1Ni1nY206N2UxZGQ0YzU1YmY4NWRhNQ==@212.192.15.209:19081#%E9%A6%99%E6%B8%AF2
+ss://YWVzLTI1Ni1nY206OWNhMjgwM2MxNmRlNzJjZA==@46.17.40.29:10986#%E4%BF%84%E7%BD%97%E6%96%AF
+ss://YWVzLTI1Ni1nY206OTkzOTRjZmViZTZjMDkwNg==@185.141.219.158:30312#%E6%97%A5%E6%9C%AC2
+ss://YWVzLTI1Ni1nY206OWNhMjgwM2MxNmRlNzJjZA==@46.17.40.29:10986#%E6%B3%95%E5%9B%BD2
+ss://YWVzLTI1Ni1nY206ZGFkYTEyMDM=@54.169.168.89:80#JPOsaka
+ss://YWVzLTI1Ni1nY206ZGFkYTEyMDM=@18.219.191.156:80#USHouston
