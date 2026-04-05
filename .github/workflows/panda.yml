@@ -1,4 +1,4 @@
-name: 获取并更新VPN订阅节点
+name: panda更新VPN订阅节点
 
 on:
   schedule:
@@ -25,14 +25,26 @@ jobs:
       - name: 安装依赖
         run: pip install requests
 
+      - name: 从 Gist 下载脚本（使用 Secret PANDA）
+        run: |
+          curl -o panda.py "${{ secrets.PANDA }}"
+          if [ ! -f panda.py ]; then
+            echo "错误：无法下载 panda.py，请检查 secret PANDA 的 URL"
+            exit 1
+          fi
+          chmod +x panda.py
+          echo "panda.py 下载成功，内容前10行："
+          head -n 10 panda.py
+
       - name: 运行脚本生成 panda.txt
         run: |
           python panda.py
-          echo "脚本执行完毕，当前目录文件列表："
+          echo "=== 当前目录文件列表 ==="
           ls -la
           if [ -f panda.txt ]; then
-            echo "panda.txt 已生成，内容行数："
+            echo "panda.txt 生成成功，内容行数："
             wc -l panda.txt
+            head -n 3 panda.txt
           else
             echo "错误：panda.txt 未生成！"
             exit 1
