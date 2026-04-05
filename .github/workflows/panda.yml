@@ -1,4 +1,4 @@
-name: 获取并更新VPN订阅节点
+name: panda并更新VPN订阅节点
 
 on:
   schedule:
