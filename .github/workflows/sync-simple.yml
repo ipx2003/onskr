@@ -1,0 +1,36 @@
+name: Sync upstream from Alex0510/onskr
+
+on:
+  schedule:
+    - cron: '0 18 * * *'  # 每天UTC时间18:00（北京时间02:00）同步一次
+  workflow_dispatch:       # 允许手动触发
+
+jobs:
+  sync-upstream:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout current repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Add upstream remote
+      run: |
+        git remote add upstream https://github.com/Alex0510/onskr.git
+        git fetch upstream
+
+    - name: Merge upstream changes
+      run: |
+        git config user.name "GitHub Actions Bot"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git merge upstream/main --no-edit --no-ff
+
+    - name: Push changes
+      run: git push origin main
+
+    - name: Create summary
+      run: |
+        echo "## 同步完成 ✅" >> $GITHUB_STEP_SUMMARY
+        echo "- 上游仓库: Alex0510/onskr" >> $GITHUB_STEP_SUMMARY
+        echo "- 同步时间: $(date)" >> $GITHUB_STEP_SUMMARY
+        echo "- 状态: 成功" >> $GITHUB_STEP_SUMMARY
