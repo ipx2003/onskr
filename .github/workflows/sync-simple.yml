@@ -2,7 +2,7 @@ name: Sync upstream from Alex0510/onskr
 
 on:
   schedule:
-    - cron: '0 18 * * *'  # 每天UTC时间18:00（北京时间02:00）同步一次
+    - cron: '0 00 * * *'  # 每天UTC时间00:00（北京时间08:00）同步一次
   workflow_dispatch:       # 允许手动触发
 
 jobs:
